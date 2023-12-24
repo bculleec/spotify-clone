@@ -1,0 +1,414 @@
+            .thumbnail {
+                width: 200px;
+                border-radius: 7%;
+                display: block;
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                position: relative;
+
+            }
+
+            body{
+                background-color: #000;
+                
+            }
+
+            .search-bar{
+                border: none;
+                border-radius: 15px;
+                background-color: #363636;
+                height: 30px;
+                padding-left: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                display: block;
+                margin-left: 20px;
+                margin-top: 30px;
+                width: 80%;
+                color: azure;
+                transition: height 0.1s ease-in-out;
+                
+            }
+
+            .search-bar:hover{
+                height: 35px;
+            }
+
+
+            .episode-title, .episode-date{
+                color: azure;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 200px;
+                text-align: center
+            }
+
+            .episode-title{
+                font-weight: 600;
+                height: 40px;
+                margin-bottom: 2px;
+            }
+
+            .episode-date{
+                color: #f0ffff7F;
+                font-size: 15px;
+                margin-top: 2px;
+            }
+
+            .episode-card{
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 25px;
+                
+                background-color: #181818;
+                display: inline-block;
+                border-radius: 10px;
+                margin-top: 20px;
+                vertical-align: top;
+                margin-left: 15px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                position: relative;
+            }
+            .episode-card:hover{
+                background-color: #272727;
+                cursor: pointer;
+            }
+            .episode-card:hover > .play-button{
+                opacity: 1;
+            }
+            .currently-playing{
+                height: 90px;
+                background-color: #000;
+                display: block;
+                position: fixed;
+                bottom: 0%;
+                width: 100%;
+                left: 0%;
+            }
+
+            .sidebar{
+                display: inline-block;
+                margin-right: 50px;
+                background-color: #121212;
+                width: 400px;
+                height: 850px;
+                border-radius: 5px / 10px;
+                vertical-align: top;
+            }
+
+            .episodes{
+                display: inline-block;
+                background-image: linear-gradient(#332a33,#121212, #121212, #121212);
+                position: absolute;
+                right: 0%;
+                width: 1500px;
+                height: 850px;
+                border-radius: 8px / 15px;
+                vertical-align: top;
+                overflow: auto;
+            }
+            .greeting{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 27px;
+                color: azure;
+                margin-top: 30px;
+                margin-left: 20px;
+                font-weight: 600;
+            }
+            .section{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 22px;
+                color: azure;
+                margin-top: 60px;
+                margin-left: 20px;
+                font-weight: 600;
+            }
+            .quick-playlists{
+                height: 130px;
+                background-color: #00000000;
+                display: block;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 30px;
+                position: relative;
+            }
+
+            .row1{
+                height: 60px;
+                width: 100%;
+                background-color: rgba(159, 173, 173, 0);
+                top: 0;
+                display: block;
+                position: absolute;
+                left: 0%;
+            }
+            .row2{
+                height: 60px;
+                width: 100%;
+                background-color: rgba(211, 190, 190, 0);
+                position: absolute;
+                bottom: 0;
+            }
+
+            .top-left, .top-right, .top-middle, .bottom-left, .bottom-middle, .bottom-right
+            {
+                background-color: #2B2B2B;
+                border-radius: 5px;
+                transition: background-color 0.3s ease-in-out;
+            }
+            .top-left:hover, .top-right:hover, .top-middle:hover, .bottom-left:hover, .bottom-middle:hover, .bottom-right:hover
+            {
+                background-color: #3b3b3b;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+            .top-left:hover > .play-quick, .top-right:hover > .play-quick, .top-middle:hover > .play-quick , .bottom-left:hover > .play-quick, .bottom-middle:hover > .play-quick, .bottom-right:hover > .play-quick
+            {
+                opacity: 1;
+            }
+
+            .top-left{
+                height: 100%;
+                width: 33%;
+                left: 0%;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .top-middle{
+                height: 100%;
+                width: 33%;
+                display: inline-block;
+                position: absolute;
+                left: 33.5%;
+            }
+
+            .top-right{
+                height: 100%;
+                width: 33%;
+                right: 0%;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .bottom-left{
+                height: 100%;
+                width: 33%;
+                left: 0%;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .bottom-middle{
+                height: 100%;
+                width: 33%;
+                display: inline-block;
+                position: absolute;
+                left: 33.5%;
+            }
+
+            .bottom-right{
+                height: 100%;
+                width: 33%;
+                right: 0%;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .quick-image{
+                height: 100%;
+                position: absolute;
+                left: 0;
+                border-radius: 5px;
+                display: inline-block;
+                box-shadow: 5px 0px 15px #0000007F;
+            }
+
+            .quick-text{
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                color: azure;
+                font-size: 15px;
+                font-weight: 600;
+                margin-left: 80px;
+                margin-top: 23px;
+            }
+
+            ::-webkit-scrollbar {
+            width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+            background: #f1f1f100;
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background-color: #4e4e4e00;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+            background-color: #4e4e4e;
+            }
+
+            .athumbnail{
+                width: 200px;
+                border-radius: 50%;
+                display: block;
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .playing-thumbnail{
+                height: 65%;
+                border-radius: 5px;
+                margin-left: 0px;
+                position: absolute;
+                left: 25px;
+                margin-top: 15px;
+            }
+
+            .info{
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 30%;
+            }
+
+            .controls{
+                display: inline-block;
+                position: absolute;
+                height: 100%;
+                width: 45%;
+                margin-left: 20%;
+            }
+            .playing-info{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 10px;
+                color: azure;
+                font-size: 12px;
+                display: inline-block;
+                margin-left: 100px;
+                margin-top: 25px;
+                line-height: 5px;
+                position: absolute;
+            }
+
+            .title:hover{
+                text-decoration: underline;
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .artist:hover{
+                text-decoration: underline;
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .artist{
+                font-weight: 600;
+            }
+
+            .title{
+                opacity: 0.5;
+            }
+
+            .library-card{
+                width: 95%;
+                display: block;
+                margin-top: 10px;
+                height: 60px;
+                position: relative;
+                border-radius: 5px;
+                margin-left: 5px;
+            }
+
+            .library-card:hover{
+                background-color: #2b2b2b;
+                cursor: pointer;
+            }
+
+            .library-img{
+                height: 100%;
+                border-radius: 5px;
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .library-info{
+                display: inline-block;
+                color: azure;
+                font-size: 14px;
+                height: 100%;
+                width: 50%;
+                position: absolute;
+                margin-left: 15px;
+                line-height: 7px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .library-title{
+                display: block;
+                font-weight: 600;
+            }
+
+            .library-details{
+                opacity: 0.5;
+            }
+            .sidebar .section{
+                opacity: 0.5;
+                margin-bottom: 50px;
+            }
+
+            .play-button{
+                position: absolute;
+                height: 60px;
+                right: 30px;
+                bottom: 120px;
+                box-shadow: 0px 10px 10px #0000006F;
+                border-radius: 60%;
+                opacity: 0;
+                transition: opacity 0.15s ease-in-out,
+                            height 0.15s ease-in-out;
+
+            }
+
+            .play-button:hover{
+                height: 65px;
+            }
+
+
+
+            .play-quick{
+                position: absolute;
+                height: 40px;
+                right: 10px;
+                top: 10px;
+                box-shadow: 0px 10px 10px #0000006F;
+                border-radius: 60%;
+                opacity: 0;
+                transition: opacity 0.15s ease-in-out,
+                            height 0.15s ease-in-out;
+            }
+            .play-quick:hover{
+                height: 42px;
+            }
+            .section:hover{
+                opacity: 1;
+                transition: opacity 0.3s ease-in-out;
+                cursor: pointer;
+            }
+            .white-button{
+                height: 38%;
+                right: 35%;
+                position: absolute;
+                margin-top: 27px;
+                transition: height 0.1s ease-in-out;
+
+            }
+
+            .white-button:hover{
+                height: 40%;
+            }
+            
